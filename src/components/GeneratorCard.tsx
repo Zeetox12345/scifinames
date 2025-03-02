@@ -1,4 +1,3 @@
-
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
@@ -32,9 +31,14 @@ const GeneratorCard = ({
   
   const neonColor = colorMap[color];
   
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+  
   return (
     <Link 
       to={to}
+      onClick={handleClick}
       className="glass-panel p-6 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-neon group overflow-hidden h-full block"
       style={{ 
         animationDelay: `${delay}ms`, 
