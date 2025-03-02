@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import CustomButton from './ui/CustomButton';
 import { ArrowRight, Sparkles } from 'lucide-react';
@@ -97,23 +96,14 @@ const Hero = () => {
             From space explorers to alien species, find the perfect name for your sci-fi universe.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '600ms' }}>
-            <CustomButton 
-              to="/all-generators" 
-              size="lg"
-              icon={<ArrowRight size={18} />}
-              iconPosition="right"
+          <div className="animate-fade-in-up" style={{ animationDelay: '600ms' }}>
+            <a 
+              href="#generators" 
+              className="inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neon-blue/50 bg-gradient-to-r from-neon-blue to-neon-purple text-white hover:shadow-neon text-base px-6 py-3"
             >
               Explore All Generators
-            </CustomButton>
-            
-            <CustomButton 
-              to="/about" 
-              variant="outline" 
-              size="lg"
-            >
-              Learn More
-            </CustomButton>
+              <ArrowRight size={18} className="ml-2" />
+            </a>
           </div>
         </div>
       </div>

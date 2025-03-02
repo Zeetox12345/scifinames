@@ -49,7 +49,7 @@ const NameGenerators = () => {
   ];
   
   return (
-    <section className="container mx-auto px-4 py-16">
+    <section id="generators" className="container mx-auto px-4 py-16">
       <div className="flex flex-col items-center mb-12 text-center">
         <span className="text-neon-blue font-mono text-sm tracking-wider uppercase mb-2">Explore Generators</span>
         <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">

@@ -1,6 +1,6 @@
 
 import { ReactNode } from 'react';
-import CustomButton from './ui/CustomButton';
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 interface GeneratorCardProps {
@@ -8,7 +8,7 @@ interface GeneratorCardProps {
   description: string;
   icon: ReactNode;
   to: string;
-  color?: 'blue' | 'purple' | 'pink' | 'cyan' | 'red';
+  color?: 'blue' | 'purple' | 'pink' | 'cyan' | 'red' | 'green';
   delay?: number;
 }
 
@@ -27,13 +27,15 @@ const GeneratorCard = ({
     pink: 'neon-pink',
     cyan: 'neon-cyan',
     red: 'neon-red',
+    green: 'neon-green',
   };
   
   const neonColor = colorMap[color];
   
   return (
-    <div 
-      className="glass-panel p-6 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-neon group overflow-hidden h-full"
+    <Link 
+      to={to}
+      className="glass-panel p-6 transition-all duration-300 hover:translate-y-[-5px] hover:shadow-neon group overflow-hidden h-full block"
       style={{ 
         animationDelay: `${delay}ms`, 
         animation: 'fade-in-up 0.6s ease-out forwards',
@@ -54,18 +56,12 @@ const GeneratorCard = ({
       <h3 className="text-xl font-display font-bold mb-2 text-white">{title}</h3>
       <p className="text-white/70 mb-6">{description}</p>
       
-      {/* Button */}
-      <CustomButton 
-        to={to} 
-        variant="outline" 
-        size="sm"
-        className={`w-full justify-center border-${neonColor}/30 hover:border-${neonColor}/80 hover:text-${neonColor}`}
-        icon={<ArrowRight size={16} />}
-        iconPosition="right"
-      >
-        Generate
-      </CustomButton>
-    </div>
+      {/* Button styling at bottom of card */}
+      <div className={`flex items-center justify-center font-medium text-sm text-${neonColor}/80 group-hover:text-${neonColor}`}>
+        <span>Generate</span>
+        <ArrowRight size={16} className="ml-2" />
+      </div>
+    </Link>
   );
 };
 
