@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className="bg-space-900 border-t border-space-700">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
-          <div>
+          <div className="md:col-span-2">
             <Link to="/" className="inline-block mb-4">
               <span className="text-2xl font-display font-bold tracking-wider text-white">
                 SciFiNames<span className="text-neon-blue">.com</span>
