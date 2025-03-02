@@ -16,8 +16,8 @@ const CloneGenerator = () => {
       type="Clone"
       description="Create authentic designation codes and nicknames for clone troopers, replicants, or any replicated entities in your sci-fi universe. Perfect for Star Wars fan fiction, roleplaying games, or original stories featuring genetically identical soldiers."
       examples={exampleNames}
-      image1="/lovable-uploads/08114623-2d9b-42db-b532-8e8af5669008.png"
-      image2="/lovable-uploads/c06bab8e-971e-40b9-924a-6b590208f96f.png"
+      image1="/generator-pictures/clone/clone1.jpg"
+      image2="/generator-pictures/clone/clone2.jpg"
     >
       <Element name="introduction" className="mb-10">
         <h2 className="text-3xl font-display font-bold mb-4 text-white">Introduction</h2>

@@ -16,8 +16,8 @@ const BionicleGenerator = () => {
       type="Bionicle"
       description="Create perfect names for biomechanical beings inspired by the legendary Bionicle universe. Ideal for fans creating original characters, writers exploring similar settings, or gamers developing new cybernetic heroes and villains."
       examples={exampleNames}
-      image1="/lovable-uploads/08114623-2d9b-42db-b532-8e8af5669008.png"
-      image2="/lovable-uploads/c06bab8e-971e-40b9-924a-6b590208f96f.png"
+      image1="/generator-pictures/Bionicle/bionicle1.jpg"
+      image2="/generator-pictures/Bionicle/bionicle2.jpg"
     >
       <Element name="introduction" className="mb-10">
         <h2 className="text-3xl font-display font-bold mb-4 text-white">Introduction</h2>

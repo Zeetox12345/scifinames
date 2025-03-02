@@ -16,8 +16,8 @@ const CyborgGenerator = () => {
       type="Cyborg"
       description="Create perfect designations for human-machine hybrids, augmented humans, and technological entities. Ideal for science fiction writers, gamers, and worldbuilders developing stories with enhanced beings and synthetic humanoids."
       examples={exampleNames}
-      image1="/lovable-uploads/08114623-2d9b-42db-b532-8e8af5669008.png"
-      image2="/lovable-uploads/c06bab8e-971e-40b9-924a-6b590208f96f.png"
+      image1="/generator-pictures/cyborg/cyborg1.jpg"
+      image2="/generator-pictures/cyborg/cyborg2.jpg"
     >
       <Element name="introduction" className="mb-10">
         <h2 className="text-3xl font-display font-bold mb-4 text-white">Introduction</h2>
