@@ -1,20 +1,21 @@
-
 import GeneratorPage from '@/components/GeneratorPage';
 import { Element } from 'react-scroll';
+import { getExampleNames } from '@/lib/nameData';
+import { useDocumentTitle } from '@/lib/useDocumentTitle';
 
 const ChissGenerator = () => {
-  const exampleNames = [
-    "Thrawn'nuruodo", "Ar'alani", "Mitth'raw'nuruodo", "Csapla'mina'pali", "Irizi'stal'mustro", 
-    "Kres'ten'tarthi", "Prard'ras'kleoni", "Bsic'pesifa'ratu", "Droc'selet'vesto", "Thalias",
-    "Vurawn", "Ziara", "Samakro", "Eli'van'to", "Ufsa'mak'ro",
-    "Haplif", "Thurfian", "Jaavis", "Bagra", "Zistalmu"
-  ];
+  // Get example names from our data utility
+  const exampleNames = getExampleNames('Chiss');
+  
+  // Set the document title and description for SEO
+  const description = "Generate authentic Chiss names from the Star Wars universe with our database of 10,000+ names. Perfect for roleplaying games, fan fiction, or creating your own characters from the mysterious blue-skinned species of the Unknown Regions.";
+  useDocumentTitle('Chiss Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage
       title="Chiss Name Generator"
       type="Chiss"
-      description="Create authentic names for the mysterious blue-skinned species from the Star Wars universe. Perfect for fans writing fiction, roleplaying game characters, or creating original stories set in the Unknown Regions of the galaxy."
+      description={description}
       examples={exampleNames}
       image1="/generator-pictures/chiss/chiss1.jpg"
       image2="/generator-pictures/chiss/chiss2.jpg"
@@ -89,6 +90,16 @@ const ChissGenerator = () => {
               <li>Thalias - Sky-walker trainer</li>
               <li>Vurawn - Chiss officer</li>
               <li>Samakro - Senior Captain</li>
+              <li>Che'ri - Sky-walker navigator</li>
+              <li>Vah'nya - Senior Sky-walker</li>
+              <li>Ziinda - Sky-walker</li>
+              <li>Thalias - Caregiver</li>
+              <li>Thurfian - Aristocra</li>
+              <li>Lakuviv - Syndic</li>
+              <li>Plikh'ar'illmorf (Plik) - Caregiver</li>
+              <li>Clarr - Warrior</li>
+              <li>Khresh - Warrior</li>
+              <li>Wutroow - Mid Captain</li>
             </ul>
           </div>
           <div className="glass-panel p-4">
@@ -99,9 +110,64 @@ const ChissGenerator = () => {
               <li>Irizi - Ruling family focused on education</li>
               <li>Sabosen - Prominent family</li>
               <li>Chaf - Family known for diplomatic roles</li>
+              <li>Nuruodo - Military and foreign affairs</li>
+              <li>Inrokini - Science and technology</li>
+              <li>Dasklo - Manufacturing</li>
+              <li>Ufsa - Transportation</li>
+              <li>Kivu - Lesser family (Thrawn's birth family)</li>
+              <li>Boadil - Lesser family</li>
+              <li>Clarr - Military family</li>
+              <li>Erighal - Lesser family</li>
+              <li>Xodlak - Lesser family</li>
+              <li>Pommrio - Lesser family</li>
             </ul>
           </div>
         </div>
+        
+        <div className="glass-panel p-6 mb-6">
+          <h3 className="text-xl font-display font-bold mb-2 text-white">Legends Characters</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <ul className="text-white/70 space-y-1">
+              <li>Sev'rance Tann - Dark Acolyte</li>
+              <li>Hess'irolia'nuruodo - Commander</li>
+              <li>Kres'ten'tarthi - Commander</li>
+              <li>Brast'alshi'barku - Aristocra</li>
+              <li>Prard'ras'kleoni - General</li>
+              <li>Fehlaaur'aitel'loro - Ambassador</li>
+              <li>Mitth'ras'safis (Thrass) - Syndic</li>
+            </ul>
+            <ul className="text-white/70 space-y-1">
+              <li>Dreel - Bounty Hunter</li>
+              <li>Stent - Force-sensitive Chiss</li>
+              <li>Talshib - Warrior</li>
+              <li>Prakk - Warrior</li>
+              <li>Karyce - Diplomat</li>
+              <li>Chaf'orm'bintrano (Formbi) - Aristocra</li>
+              <li>Csapla'ar'yllanin (Clarsi) - Aristocra</li>
+            </ul>
+            <ul className="text-white/70 space-y-1">
+              <li>Dasklo'ar'nusokto (Darnus) - Aristocra</li>
+              <li>Inrokini'dri'nallesh (Indrin) - Aristocra</li>
+              <li>Irizi'stal'mustro (Istam) - Aristocra</li>
+              <li>Nuruodo'resh'tallos (Nuresht) - Aristocra</li>
+              <li>Laenan'vesu'reen - Captain</li>
+              <li>Mith'ele'anik (Thelea) - Pilot</li>
+              <li>Ina'ganet'nuruodo - Commander</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="glass-panel p-6 mb-6">
+          <h3 className="text-xl font-display font-bold mb-2 text-white">Chiss Naming Structure</h3>
+          <p className="text-white/70 mb-2">Chiss full names consist of three parts:</p>
+          <ol className="list-decimal list-inside text-white/70 mb-4 pl-4 space-y-1">
+            <li><strong>Family name prefix</strong> - Indicates the family (e.g., Mitth', Csapla', Irizi')</li>
+            <li><strong>Core name</strong> - The individual's personal identifier (e.g., raw', ras', orm')</li>
+            <li><strong>Family name suffix</strong> - Completes the family name (e.g., nuruodo, safis, bintrano)</li>
+          </ol>
+          <p className="text-white/70">Core names are often used as informal address between close associates. For example, Mitth'raw'nuruodo is commonly called "Raw" or "Thrawn" by those familiar with him.</p>
+        </div>
+        
         <p className="text-white/70">These characters and families demonstrate the distinctive naming patterns of the Chiss while showcasing the variety possible within their conventions. Grand Admiral Thrawn remains the most recognizable Chiss character, bringing this species to prominence in the Star Wars universe.</p>
       </Element>
     </GeneratorPage>

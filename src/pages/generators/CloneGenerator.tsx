@@ -1,20 +1,21 @@
-
 import GeneratorPage from '@/components/GeneratorPage';
 import { Element } from 'react-scroll';
+import { getExampleNames } from '@/lib/nameData';
+import { useDocumentTitle } from '@/lib/useDocumentTitle';
 
 const CloneGenerator = () => {
-  const exampleNames = [
-    "CT-7567 (Rex)", "CC-2224 (Cody)", "CT-5555 (Fives)", "CT-1409 (Echo)", "CT-6116 (Kix)",
-    "CT-4040 (Cutup)", "CC-5052 (Bly)", "CT-0292 (Gree)", "CT-2701 (Boomer)", "CT-7701 (Waxer)",
-    "CT-8633 (Hardcase)", "CC-1010 (Fox)", "CT-1312 (Sketch)", "CC-3636 (Wolffe)", "CT-9521 (Crosshair)",
-    "CT-4169 (Cannon)", "CT-2003 (Dredd)", "CC-0078 (Spire)", "CT-6454 (Havoc)", "CT-1702 (Bulwark)"
-  ];
+  // Get example names from our data utility
+  const exampleNames = getExampleNames('Clone');
+  
+  // Set the document title and description for SEO
+  const description = "Generate authentic clone trooper designations and nicknames from the Star Wars universe. Access our database of 10,000+ clone names perfect for roleplaying games, fan fiction, or creating your own 501st Legion members.";
+  useDocumentTitle('Clone Trooper Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage
-      title="Clone Name Generator"
+      title="Clone Trooper Name Generator"
       type="Clone"
-      description="Create authentic designation codes and nicknames for clone troopers, replicants, or any replicated entities in your sci-fi universe. Perfect for Star Wars fan fiction, roleplaying games, or original stories featuring genetically identical soldiers."
+      description={description}
       examples={exampleNames}
       image1="/generator-pictures/clone/clone1.jpg"
       image2="/generator-pictures/clone/clone2.jpg"
@@ -106,6 +107,16 @@ const CloneGenerator = () => {
               <li>CT-5555 "Fives" - ARC Trooper of the 501st Legion</li>
               <li>CT-1409 "Echo" - ARC Trooper who later joined Bad Batch</li>
               <li>CT-99 "99" - Malformed clone who served on Kamino</li>
+              <li>CT-21-0408 "Echo" - ARC Trooper, later cyborg</li>
+              <li>CT-27-5555 "Fives" - ARC Trooper who discovered Order 66</li>
+              <li>CT-5597 "Jesse" - 501st Legion trooper</li>
+              <li>CT-6116 "Kix" - 501st Legion medic</li>
+              <li>CT-782 "Hevy" - Domino Squad member</li>
+              <li>CT-4040 "Cutup" - Domino Squad member</li>
+              <li>CT-00-2010 "Droidbait" - Domino Squad member</li>
+              <li>CC-5052 "Bly" - Commander of the 327th Star Corps</li>
+              <li>CC-1004 "Gree" - Commander of the 41st Elite Corps</li>
+              <li>CC-1138 "Bacara" - Commander of the Galactic Marines</li>
             </ul>
           </div>
           <div className="glass-panel p-4">
@@ -119,6 +130,55 @@ const CloneGenerator = () => {
             </ul>
           </div>
         </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Clone Commanders</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>CC-3636 "Wolffe" - Commander of the Wolfpack</li>
+              <li>CC-1010 "Fox" - Commander of the Coruscant Guard</li>
+              <li>CC-8826 "Neyo" - Commander of the 91st Recon Corps</li>
+              <li>CC-1119 "Appo" - Commander who led the 501st to the Jedi Temple</li>
+              <li>CC-5576-39 "Gregor" - Commando who lost his memory</li>
+              <li>CC-4477 "Thire" - Coruscant Guard commander</li>
+              <li>CC-1993 "Jet" - Commander who served under Ki-Adi-Mundi</li>
+              <li>CC-3714 "Fil" - Commander who served under Kit Fisto</li>
+              <li>CC-8542 "Doom" - Commander who served under Tiplar and Tiplee</li>
+              <li>CC-2237 "Odd Ball" - Clone pilot commander</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Specialized Clones</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>CT-411 "Ponds" - Commander of the Lightning Squadron</li>
+              <li>ARC-77 "Fordo" - Advanced Recon Commando</li>
+              <li>CT-1157 "Havoc" - Rancor Battalion trooper</li>
+              <li>CT-9529 "Rys" - Coruscant Guard trooper</li>
+              <li>CT-0292 "Sketch" - Artistic clone trooper</li>
+              <li>CT-4142 "Jek" - 501st Legion trooper</li>
+              <li>CT-8863 "Waxer" - 212th Battalion trooper</li>
+              <li>CT-6910 "Boil" - 212th Battalion trooper</li>
+              <li>CT-327 "Tup" - 501st Legion trooper</li>
+              <li>CT-1284 "Spark" - Clone pilot</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Delta Squad</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>RC-1138 "Boss" - Delta Squad leader</li>
+              <li>RC-1140 "Fixer" - Delta Squad tech specialist</li>
+              <li>RC-1207 "Sev" - Delta Squad sniper</li>
+              <li>RC-1262 "Scorch" - Delta Squad demolitions expert</li>
+              <li>RC-1309 "Niner" - Omega Squad member</li>
+              <li>RC-8015 "Fi" - Omega Squad member</li>
+              <li>RC-3222 "Atin" - Omega Squad member</li>
+              <li>RC-1136 "Darman" - Omega Squad member</li>
+              <li>Alpha-17 "Alpha" - ARC Trooper trainer</li>
+              <li>Null-11 "Ordo" - Null-class ARC Trooper</li>
+            </ul>
+          </div>
+        </div>
+        
         <p className="text-white/70">These popular names demonstrate how effective clone naming combines systematic designation with nickname individuality, creating memorable characters despite their genetically identical origins. The contrast between numerical designations and humanizing nicknames highlights the central theme of individuality emerging from conformity.</p>
       </Element>
     </GeneratorPage>

@@ -1,20 +1,21 @@
-
 import GeneratorPage from '@/components/GeneratorPage';
 import { Element } from 'react-scroll';
+import { getExampleNames } from '@/lib/nameData';
+import { useDocumentTitle } from '@/lib/useDocumentTitle';
 
 const CyborgGenerator = () => {
-  const exampleNames = [
-    "Unit ARK-7", "Nexus-6", "Cypher MX9", "Epsilon-12", "Omega Protocol",
-    "Genesis Prime", "Atlas X-1", "Helix-V7", "Guardian M.K.II", "Synapse",
-    "Cortex Nova", "Apex-IX", "Vanguard Z3RO", "Titan Core", "Sentinel-7",
-    "Cipher Matrix", "Omni-Tech", "Quantum Pulse", "Meridian X", "Echo Protocol"
-  ];
+  // Get example names from our data utility
+  const exampleNames = getExampleNames('Cyborg');
+  
+  // Set the document title and description for SEO
+  const description = "Generate perfect names for cybernetic organisms, human-machine hybrids, and augmented beings. Browse our collection of 10,000+ cyborg names ideal for sci-fi stories, cyberpunk settings, or futuristic characters that blend organic and mechanical elements.";
+  useDocumentTitle('Cyborg Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage
       title="Cyborg Name Generator"
       type="Cyborg"
-      description="Create perfect designations for human-machine hybrids, augmented humans, and technological entities. Ideal for science fiction writers, gamers, and worldbuilders developing stories with enhanced beings and synthetic humanoids."
+      description={description}
       examples={exampleNames}
       image1="/generator-pictures/cyborg/cyborg1.jpg"
       image2="/generator-pictures/cyborg/cyborg2.jpg"
@@ -112,6 +113,16 @@ const CyborgGenerator = () => {
               <li>Darth Vader (Anakin Skywalker)</li>
               <li>Seven of Nine (Star Trek)</li>
               <li>Winter Soldier (Bucky Barnes)</li>
+              <li>Cable (Nathan Summers)</li>
+              <li>Nebula (Marvel)</li>
+              <li>General Grievous (Star Wars)</li>
+              <li>Deathlok (Marvel)</li>
+              <li>Inspector Gadget</li>
+              <li>The Borg (Star Trek)</li>
+              <li>Genos (One-Punch Man)</li>
+              <li>Roy Batty (Blade Runner)</li>
+              <li>Alita (Battle Angel)</li>
+              <li>Cyborg Superman (Hank Henshaw)</li>
             </ul>
           </div>
           <div className="glass-panel p-4">
@@ -122,9 +133,68 @@ const CyborgGenerator = () => {
               <li>Motoko Kusanagi (Ghost in the Shell)</li>
               <li>Victor Stone (Cyborg from DC Comics)</li>
               <li>Raiden (Metal Gear)</li>
+              <li>JC Denton (Deus Ex)</li>
+              <li>Sombra (Overwatch)</li>
+              <li>Genji (Overwatch)</li>
+              <li>Molly Millions (Neuromancer)</li>
+              <li>Batou (Ghost in the Shell)</li>
+              <li>Deckard (Blade Runner)</li>
+              <li>Armitage (Neuromancer)</li>
+              <li>Herr Starr (Preacher)</li>
+              <li>Strogg (Quake)</li>
+              <li>Kano (Mortal Kombat)</li>
             </ul>
           </div>
         </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Military Cyborgs</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Deathlok Prime</li>
+              <li>Unit ARK-7</li>
+              <li>Vanguard Z3RO</li>
+              <li>MX-93 "Reaper"</li>
+              <li>Sentinel X-1</li>
+              <li>Guardian M.K.II</li>
+              <li>Talon-V</li>
+              <li>Warpath-9</li>
+              <li>Aegis Protocol</li>
+              <li>Chimera Unit</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Conceptual Designations</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Nexus-6</li>
+              <li>Cortex Nova</li>
+              <li>Quantum Pulse</li>
+              <li>Synapse Alpha</li>
+              <li>Genesis Prime</li>
+              <li>Apex Construct</li>
+              <li>Matrix Protocol</li>
+              <li>Singularity Node</li>
+              <li>Cipher Entity</li>
+              <li>Omega Directive</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Human-Machine Hybrids</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Adam-X1</li>
+              <li>Sarah Protocol</li>
+              <li>James "Wireframe" Chen</li>
+              <li>Dr. Nova Syn</li>
+              <li>Eliza Circuit</li>
+              <li>Marcus "Steel" Vega</li>
+              <li>Zoe Interface</li>
+              <li>Kai "Mainframe" Takeda</li>
+              <li>Lena "Pulse" Kowalski</li>
+              <li>Axel "Chrome" Rodriguez</li>
+            </ul>
+          </div>
+        </div>
+        
         <p className="text-white/70">These iconic cyborgs demonstrate the range of naming approaches, from purely technical designations (T-800) to preserved human names (Adam Jensen) to callsigns that reference their cyborg nature (Cyborg). The most memorable cyborg names often reflect the character's journey between human and machine identities, creating a compelling tension that defines their story arc.</p>
       </Element>
     </GeneratorPage>

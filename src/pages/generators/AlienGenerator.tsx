@@ -1,20 +1,21 @@
-
 import GeneratorPage from '@/components/GeneratorPage';
 import { Element } from 'react-scroll';
+import { getExampleNames } from '@/lib/nameData';
+import { useDocumentTitle } from '@/lib/useDocumentTitle';
 
 const AlienGenerator = () => {
-  const exampleNames = [
-    "Zorblax", "Qu'lara", "Nyx'thul", "Vexilon", "Thalassi",
-    "Kr'thaan", "Zephyrian", "Xoraal", "Quazarith", "Etherena",
-    "Zyth'mar", "Valuxia", "Omnithex", "Draconyx", "Stellara",
-    "Phantasm", "Nebulox", "Vraxxian", "Xenorbia", "Kosmaar"
-  ];
+  // Get example names from our data utility
+  const exampleNames = getExampleNames('Alien');
+  
+  // Set the document title and description for SEO
+  const description = "Create unique, otherworldly names for alien species, characters, and civilizations from across the cosmos. Access our database of 10,000+ alien names perfect for sci-fi writers, gamers, and worldbuilders looking to populate their universe with diverse extraterrestrial life.";
+  useDocumentTitle('Alien Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage
       title="Alien Name Generator"
       type="Alien"
-      description="Create unique, otherworldly names for alien species, characters, and civilizations from across the cosmos. Perfect for sci-fi writers, gamers, and worldbuilders looking to populate their universe with diverse extraterrestrial life."
+      description={description}
       examples={exampleNames}
       image1="/generator-pictures/alien/alien1.jpg"
       image2="/generator-pictures/alien/alien2.jpg"
@@ -81,6 +82,21 @@ const AlienGenerator = () => {
               <li>Wookiees (Star Wars)</li>
               <li>Xenomorphs (Alien)</li>
               <li>Prawns (District 9)</li>
+              <li>Klingons (Star Trek)</li>
+              <li>Daleks (Doctor Who)</li>
+              <li>Hutts (Star Wars)</li>
+              <li>Predators/Yautja (Predator)</li>
+              <li>Asgard (Stargate)</li>
+              <li>Goa'uld (Stargate)</li>
+              <li>Vogons (Hitchhiker's Guide)</li>
+              <li>Tralfamadorians (Slaughterhouse-Five)</li>
+              <li>Martians (War of the Worlds)</li>
+              <li>Formics/Buggers (Ender's Game)</li>
+              <li>Tholians (Star Trek)</li>
+              <li>Romulans (Star Trek)</li>
+              <li>Twi'leks (Star Wars)</li>
+              <li>Rodians (Star Wars)</li>
+              <li>Ferengi (Star Trek)</li>
             </ul>
           </div>
           <div className="glass-panel p-4">
@@ -91,9 +107,67 @@ const AlienGenerator = () => {
               <li>Sangheili (Halo)</li>
               <li>Vortigaunts (Half-Life)</li>
               <li>Flerken (Marvel Universe)</li>
+              <li>Asari (Mass Effect)</li>
+              <li>Turians (Mass Effect)</li>
+              <li>Krogan (Mass Effect)</li>
+              <li>Salarians (Mass Effect)</li>
+              <li>Covenant (Halo)</li>
+              <li>Unggoy/Grunts (Halo)</li>
+              <li>Kig-Yar/Jackals (Halo)</li>
+              <li>Jiralhanae/Brutes (Halo)</li>
+              <li>Skrulls (Marvel Universe)</li>
+              <li>Kree (Marvel Universe)</li>
+              <li>Chitauri (Marvel Universe)</li>
+              <li>Xandarians (Marvel Universe)</li>
+              <li>Sovereign (Mass Effect)</li>
+              <li>Collectors (Mass Effect)</li>
+              <li>Reapers (Mass Effect)</li>
             </ul>
           </div>
         </div>
+        
+        <div className="glass-panel p-6 mb-6">
+          <h3 className="text-xl font-display font-bold mb-2 text-white">Individual Alien Characters</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <ul className="text-white/70 space-y-1">
+              <li>E.T. (E.T. the Extra-Terrestrial)</li>
+              <li>Spock (Star Trek)</li>
+              <li>Chewbacca (Star Wars)</li>
+              <li>Yoda (Star Wars)</li>
+              <li>Jar Jar Binks (Star Wars)</li>
+              <li>Jabba (Star Wars)</li>
+              <li>Groot (Guardians of the Galaxy)</li>
+              <li>Thanos (Marvel Universe)</li>
+              <li>Stitch (Lilo & Stitch)</li>
+              <li>Alf (ALF)</li>
+            </ul>
+            <ul className="text-white/70 space-y-1">
+              <li>Paul (Paul)</li>
+              <li>Worf (Star Trek)</li>
+              <li>Teal'c (Stargate)</li>
+              <li>Thor (Stargate)</li>
+              <li>Liara T'Soni (Mass Effect)</li>
+              <li>Garrus Vakarian (Mass Effect)</li>
+              <li>Tali'Zorah (Mass Effect)</li>
+              <li>Arbiter Thel 'Vadam (Halo)</li>
+              <li>Crypto (Destroy All Humans)</li>
+              <li>Zim (Invader Zim)</li>
+            </ul>
+            <ul className="text-white/70 space-y-1">
+              <li>Marvin the Martian (Looney Tunes)</li>
+              <li>Klaatu (The Day the Earth Stood Still)</li>
+              <li>Neytiri (Avatar)</li>
+              <li>Gamora (Guardians of the Galaxy)</li>
+              <li>Drax (Guardians of the Galaxy)</li>
+              <li>Ahsoka Tano (Star Wars)</li>
+              <li>Mordin Solus (Mass Effect)</li>
+              <li>Grunt (Mass Effect)</li>
+              <li>Legion (Mass Effect)</li>
+              <li>The Doctor (Doctor Who)</li>
+            </ul>
+          </div>
+        </div>
+        
         <p className="text-white/70">Popular alien names often become well-known because they effectively capture the essence of their species while remaining easy enough for audiences to remember. They strike the perfect balance between exotic and accessible.</p>
       </Element>
     </GeneratorPage>

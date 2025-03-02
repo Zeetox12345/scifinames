@@ -1,4 +1,3 @@
-
 import { ReactNode } from 'react';
 import { Element } from 'react-scroll';
 import Header from './Header';

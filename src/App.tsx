@@ -24,12 +24,12 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/generator/alien" element={<AlienGenerator />} />
-          <Route path="/generator/bionicle" element={<BionicleGenerator />} />
-          <Route path="/generator/chiss" element={<ChissGenerator />} />
-          <Route path="/generator/clone" element={<CloneGenerator />} />
-          <Route path="/generator/cyberpunk" element={<CyberpunkGenerator />} />
-          <Route path="/generator/cyborg" element={<CyborgGenerator />} />
+          <Route path="/alien" element={<AlienGenerator />} />
+          <Route path="/bionicle" element={<BionicleGenerator />} />
+          <Route path="/chiss" element={<ChissGenerator />} />
+          <Route path="/clone" element={<CloneGenerator />} />
+          <Route path="/cyberpunk" element={<CyberpunkGenerator />} />
+          <Route path="/cyborg" element={<CyborgGenerator />} />
           <Route path="/all-generators" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

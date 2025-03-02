@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -23,12 +22,12 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-display font-bold mb-4">Generators</h3>
             <ul className="space-y-2">
-              <FooterLink to="/generator/alien">Alien Names</FooterLink>
-              <FooterLink to="/generator/bionicle">Bionicle Names</FooterLink>
-              <FooterLink to="/generator/chiss">Chiss Names</FooterLink>
-              <FooterLink to="/generator/clone">Clone Names</FooterLink>
-              <FooterLink to="/generator/cyberpunk">Cyberpunk Names</FooterLink>
-              <FooterLink to="/generator/cyborg">Cyborg Names</FooterLink>
+              <FooterLink to="/alien">Alien Names</FooterLink>
+              <FooterLink to="/bionicle">Bionicle Names</FooterLink>
+              <FooterLink to="/chiss">Chiss Names</FooterLink>
+              <FooterLink to="/clone">Clone Names</FooterLink>
+              <FooterLink to="/cyberpunk">Cyberpunk Names</FooterLink>
+              <FooterLink to="/cyborg">Cyborg Names</FooterLink>
             </ul>
           </div>
         </div>

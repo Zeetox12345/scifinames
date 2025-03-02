@@ -1,12 +1,13 @@
-
 import { useState, useEffect } from 'react';
 import CustomButton from './ui/CustomButton';
 import { RefreshCw, Copy, Check } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
+import { getExampleNames } from '@/lib/nameData';
+import { generateRandomNames } from '@/lib/nameGenerator';
 
 interface NameGeneratorProps {
   type: string;
-  examples: string[];
+  examples: string[]; // Keep for backward compatibility
 }
 
 const NameGenerator = ({ type, examples }: NameGeneratorProps) => {
@@ -16,11 +17,24 @@ const NameGenerator = ({ type, examples }: NameGeneratorProps) => {
   
   // Function to generate random names
   const generateNames = () => {
-    // In a real implementation, this would call an API or use a more sophisticated algorithm
-    // For now, we'll just randomly select from our examples and make some variations
-    const shuffled = [...examples].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, 10);
-    setNames(selected);
+    // Try to generate names using our advanced generator
+    const generatedNames = generateRandomNames(type, 10);
+    
+    // If we couldn't generate names, fall back to examples
+    if (generatedNames.length === 0) {
+      // Get names from our data utility
+      const dataExamples = getExampleNames(type);
+      
+      // Use the data examples if available, otherwise fall back to the prop
+      const namePool = dataExamples.length > 0 ? dataExamples : examples;
+      
+      // Randomly select 10 names from the pool
+      const shuffled = [...namePool].sort(() => 0.5 - Math.random());
+      const selected = shuffled.slice(0, 10);
+      setNames(selected);
+    } else {
+      setNames(generatedNames);
+    }
   };
   
   // Generate names on initial load

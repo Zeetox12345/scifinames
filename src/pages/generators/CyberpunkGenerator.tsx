@@ -1,20 +1,21 @@
-
 import GeneratorPage from '@/components/GeneratorPage';
 import { Element } from 'react-scroll';
+import { getExampleNames } from '@/lib/nameData';
+import { useDocumentTitle } from '@/lib/useDocumentTitle';
 
 const CyberpunkGenerator = () => {
-  const exampleNames = [
-    "Neon Viper", "Zero Cool", "Chrome Raven", "Glitch", "Proxy",
-    "Cipher", "Neuromancer", "Phantom Byte", "Void Runner", "Static",
-    "Crash Override", "Trinity", "Acid Burn", "Flatline", "Deckard",
-    "Synapse", "Blackout", "Mainframe", "Hex", "Pulse"
-  ];
+  // Get example names from our data utility
+  const exampleNames = getExampleNames('Cyberpunk');
+  
+  // Set the document title and description for SEO
+  const description = "Generate authentic cyberpunk handles, street names, and digital identities from our database of 10,000+ names. Perfect for roleplaying games like Cyberpunk 2077, creating netrunners for your fiction, or developing characters for dystopian sci-fi settings.";
+  useDocumentTitle('Cyberpunk Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage
       title="Cyberpunk Name Generator"
       type="Cyberpunk"
-      description="Create edgy, tech-noir handles for hackers, mercs, fixers, and street samurai in your cyberpunk universe. Perfect for roleplaying games, fiction writing, or creating digital avatars in neon-soaked dystopian settings."
+      description={description}
       examples={exampleNames}
       image1="/generator-pictures/cyberpunk/cyberpunk1.jpg"
       image2="/generator-pictures/cyberpunk/cyberpunk2.jpg"
@@ -94,6 +95,16 @@ const CyberpunkGenerator = () => {
               <li>Johnny Mnemonic - Data courier</li>
               <li>Trinity - Hacker from The Matrix</li>
               <li>Neo - The One from The Matrix</li>
+              <li>Armitage - Mysterious employer from Neuromancer</li>
+              <li>Wintermute - AI from Neuromancer</li>
+              <li>Neuromancer - AI entity</li>
+              <li>Hiro Protagonist - Courier from Snow Crash</li>
+              <li>Y.T. - Skateboard courier from Snow Crash</li>
+              <li>Raven - Antagonist from Snow Crash</li>
+              <li>Spider Jerusalem - Journalist from Transmetropolitan</li>
+              <li>Takeshi Kovacs - Ex-soldier from Altered Carbon</li>
+              <li>Quellcrist Falconer - Revolutionary from Altered Carbon</li>
+              <li>Morpheus - Operator from The Matrix</li>
             </ul>
           </div>
           <div className="glass-panel p-4">
@@ -104,9 +115,68 @@ const CyberpunkGenerator = () => {
               <li>Rache Bartmoss - Legendary netrunner</li>
               <li>Crash Override - Hacker from "Hackers" film</li>
               <li>Acid Burn - Hacker from "Hackers" film</li>
+              <li>Alt Cunningham - Netrunner from Cyberpunk</li>
+              <li>Judy Alvarez - BD editor from Cyberpunk 2077</li>
+              <li>Panam Palmer - Nomad from Cyberpunk 2077</li>
+              <li>Adam Smasher - Full-borg from Cyberpunk</li>
+              <li>Morgan Blackhand - Solo from Cyberpunk</li>
+              <li>Sombra - Hacker from Overwatch</li>
+              <li>Arasaka - Megacorp name used as identifier</li>
+              <li>Militech - Corporate identifier</li>
+              <li>Dex DeShawn - Fixer from Cyberpunk 2077</li>
+              <li>T-Bug - Netrunner from Cyberpunk 2077</li>
             </ul>
           </div>
         </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Tech-Based Handles</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Mainframe</li>
+              <li>Proxy</li>
+              <li>Cipher</li>
+              <li>Hex</li>
+              <li>Binary</li>
+              <li>Glitch</li>
+              <li>Static</li>
+              <li>Crash</li>
+              <li>Flatline</li>
+              <li>Virus</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Material/Physical Handles</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Chrome</li>
+              <li>Steel</li>
+              <li>Titanium</li>
+              <li>Quicksilver</li>
+              <li>Neon</li>
+              <li>Razor</li>
+              <li>Blade</li>
+              <li>Wire</li>
+              <li>Circuit</li>
+              <li>Spark</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Compound Handles</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Neon Viper</li>
+              <li>Chrome Raven</li>
+              <li>Phantom Byte</li>
+              <li>Digital Ghost</li>
+              <li>Cyber Wolf</li>
+              <li>Midnight Protocol</li>
+              <li>Toxic Bit</li>
+              <li>Neural Snake</li>
+              <li>Quantum Drift</li>
+              <li>Void Runner</li>
+            </ul>
+          </div>
+        </div>
+        
         <p className="text-white/70">These iconic names have helped define the cyberpunk genre and demonstrate how effective handles capture a character's essence while fitting seamlessly into these dystopian worlds. The best cyberpunk names feel authentic to the setting while being memorable enough to build a reputation around – whether in the concrete jungle or the digital frontier.</p>
       </Element>
     </GeneratorPage>

@@ -1,20 +1,21 @@
-
 import GeneratorPage from '@/components/GeneratorPage';
 import { Element } from 'react-scroll';
+import { getExampleNames } from '@/lib/nameData';
+import { useDocumentTitle } from '@/lib/useDocumentTitle';
 
 const BionicleGenerator = () => {
-  const exampleNames = [
-    "Tahu", "Makuta", "Kopaka", "Pohatu", "Onua",
-    "Gali", "Lewa", "Takanuva", "Vakama", "Nokama",
-    "Matau", "Nuju", "Whenua", "Onewa", "Teridax",
-    "Mata Nui", "Jaller", "Hahli", "Kongu", "Axonn"
-  ];
+  // Get example names from our data utility
+  const exampleNames = getExampleNames('Bionicle');
+  
+  // Set the document title and description for SEO
+  const description = "Create perfect names for biomechanical beings inspired by the legendary Bionicle universe. Browse our collection of 10,000+ Bionicle-style names ideal for fans creating original characters, writers exploring similar settings, or gamers developing new cybernetic heroes and villains.";
+  useDocumentTitle('Bionicle Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage
       title="Bionicle Name Generator"
       type="Bionicle"
-      description="Create perfect names for biomechanical beings inspired by the legendary Bionicle universe. Ideal for fans creating original characters, writers exploring similar settings, or gamers developing new cybernetic heroes and villains."
+      description={description}
       examples={exampleNames}
       image1="/generator-pictures/Bionicle/bionicle1.jpg"
       image2="/generator-pictures/Bionicle/bionicle2.jpg"
@@ -102,6 +103,106 @@ const BionicleGenerator = () => {
             </ul>
           </div>
         </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Toa Metru</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Vakama - Toa of Fire</li>
+              <li>Nokama - Toa of Water</li>
+              <li>Matau - Toa of Air</li>
+              <li>Onewa - Toa of Stone</li>
+              <li>Whenua - Toa of Earth</li>
+              <li>Nuju - Toa of Ice</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Toa Inika/Mahri</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Jaller - Toa of Fire</li>
+              <li>Hahli - Toa of Water</li>
+              <li>Kongu - Toa of Air</li>
+              <li>Hewkii - Toa of Stone</li>
+              <li>Nuparu - Toa of Earth</li>
+              <li>Matoro - Toa of Ice</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Matoran</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Takua - Chronicler, became Takanuva</li>
+              <li>Jaller - Captain of Ta-Koro Guard</li>
+              <li>Hahli - Ga-Matoran chronicler</li>
+              <li>Kongu - Le-Matoran Gukko rider</li>
+              <li>Matoro - Ko-Matoran translator</li>
+              <li>Hewkii - Po-Matoran athlete</li>
+              <li>Nuparu - Onu-Matoran inventor</li>
+              <li>Kapura - Ta-Matoran with special abilities</li>
+              <li>Macku - Ga-Matoran sailor</li>
+              <li>Tamaru - Le-Matoran villager</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Villains & Antagonists</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Teridax - Leader of the Brotherhood</li>
+              <li>Roodaka - Vortixx schemer</li>
+              <li>Sidorak - King of the Visorak</li>
+              <li>Karzahni - Ruler of the realm of the same name</li>
+              <li>Icarax - Makuta warrior</li>
+              <li>Antroz - Makuta of Xia</li>
+              <li>Chirox - Makuta scientist</li>
+              <li>Vamprah - Silent Makuta hunter</li>
+              <li>Gorast - Female Makuta</li>
+              <li>Bitil - Makuta with duplication powers</li>
+            </ul>
+          </div>
+          <div className="glass-panel p-4">
+            <h3 className="text-lg font-display font-bold mb-2 text-white">Other Important Characters</h3>
+            <ul className="text-white/70 space-y-1">
+              <li>Axonn - Order of Mata Nui warrior</li>
+              <li>Brutaka - Former guardian turned villain</li>
+              <li>Hydraxon - Pit jailer</li>
+              <li>Umbra - Guardian of the Mask of Life</li>
+              <li>Keetongu - Healing Rahi</li>
+              <li>Tren Krom - Ancient entity</li>
+              <li>Artakha - Legendary craftsman</li>
+              <li>Helryx - First Toa ever created</li>
+              <li>Botar - Order of Mata Nui teleporter</li>
+              <li>Toa Ignika - The Mask of Life's body</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="glass-panel p-6 mb-6">
+          <h3 className="text-xl font-display font-bold mb-2 text-white">Locations & Tribes</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <ul className="text-white/70 space-y-1">
+              <li>Metru Nui - City of Legends</li>
+              <li>Ta-Koro - Village of Fire</li>
+              <li>Ga-Koro - Village of Water</li>
+              <li>Le-Koro - Village of Air</li>
+              <li>Po-Koro - Village of Stone</li>
+              <li>Onu-Koro - Village of Earth</li>
+              <li>Ko-Koro - Village of Ice</li>
+              <li>Karda Nui - Core of the Universe</li>
+            </ul>
+            <ul className="text-white/70 space-y-1">
+              <li>Voya Nui - Island of Doom</li>
+              <li>Mahri Nui - Underwater city</li>
+              <li>Zakaz - Skakdi homeland</li>
+              <li>Xia - Manufacturing island</li>
+              <li>Stelt - Trading hub</li>
+              <li>Artidax - Volcanic island</li>
+              <li>Odina - Dark Hunter base</li>
+              <li>Destral - Brotherhood of Makuta headquarters</li>
+            </ul>
+          </div>
+        </div>
+        
         <p className="text-white/70">These names have stood the test of time because they perfectly balance exotic, technological sounds with readability and memorability, making them excellent examples to follow when creating your own biomechanical characters.</p>
       </Element>
     </GeneratorPage>
