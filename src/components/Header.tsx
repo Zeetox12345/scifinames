@@ -1,11 +1,13 @@
 
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Handle scroll effect
   useEffect(() => {
@@ -22,6 +24,24 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Function to handle navigation to generators section
+  const handleGeneratorsClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    // If we're already on the home page, just scroll to the section
+    if (location.pathname === '/') {
+      const generatorsSection = document.getElementById('generators');
+      if (generatorsSection) {
+        generatorsSection.scrollIntoView({ behavior: 'smooth' });
+        setIsMobileMenuOpen(false);
+      }
+    } else {
+      // Navigate to homepage and then scroll to generators section
+      navigate('/', { state: { scrollToGenerators: true } });
+      setIsMobileMenuOpen(false);
+    }
+  };
 
   return (
     <header 
@@ -43,6 +63,7 @@ const Header = () => {
           <a 
             href="#generators" 
             className="px-4 py-2 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-medium hover:shadow-neon transition-all duration-300"
+            onClick={handleGeneratorsClick}
           >
             All Generators
           </a>
@@ -69,7 +90,7 @@ const Header = () => {
             <a 
               href="#generators"
               className="px-4 py-2 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-medium text-center hover:shadow-neon transition-all duration-300"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={handleGeneratorsClick}
             >
               All Generators
             </a>
