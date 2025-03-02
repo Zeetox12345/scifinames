@@ -1,5 +1,5 @@
 
-import { Rocket, Satellite, Star, AtomIcon, Circuit, BinaryIcon } from 'lucide-react';
+import { Rocket, Satellite, Star, Atom, CircuitBoard, Binary } from 'lucide-react';
 import GeneratorCard from './GeneratorCard';
 
 const NameGenerators = () => {
@@ -14,7 +14,7 @@ const NameGenerators = () => {
     {
       title: "Alien Species",
       description: "Create unique names for alien civilizations from across the galaxies.",
-      icon: <AtomIcon className="w-6 h-6" />,
+      icon: <Atom className="w-6 h-6" />,
       to: "/generator/alien",
       color: "purple",
     },
@@ -35,14 +35,14 @@ const NameGenerators = () => {
     {
       title: "AI Entities",
       description: "Create designations for artificial intelligences, from ship computers to androids.",
-      icon: <Circuit className="w-6 h-6" />,
+      icon: <CircuitBoard className="w-6 h-6" />,
       to: "/generator/ai",
       color: "pink",
     },
     {
       title: "Space Colonies",
       description: "Name planetary settlements and frontier outposts across the stars.",
-      icon: <BinaryIcon className="w-6 h-6" />,
+      icon: <Binary className="w-6 h-6" />,
       to: "/generator/colony",
       color: "blue",
     },
