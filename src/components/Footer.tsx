@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Mail, Globe } from 'lucide-react';
+import { Mail, Globe } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -15,12 +15,10 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-white/60 max-w-md mb-6">
-              Creating the perfect names for your sci-fi universe. From starships to alien species, 
+              Creating the perfect names for your sci-fi universe. From alien species to cyberpunk hackers, 
               our generators help bring your cosmic imagination to life.
             </p>
             <div className="flex space-x-4">
-              <SocialLink href="https://github.com" icon={<Github size={20} />} />
-              <SocialLink href="https://twitter.com" icon={<Twitter size={20} />} />
               <SocialLink href="mailto:contact@scifinames.com" icon={<Mail size={20} />} />
               <SocialLink href="https://scifinames.com" icon={<Globe size={20} />} />
             </div>
@@ -30,12 +28,12 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-display font-bold mb-4">Generators</h3>
             <ul className="space-y-2">
-              <FooterLink to="/generator/starship">Starship Names</FooterLink>
-              <FooterLink to="/generator/alien">Alien Species</FooterLink>
-              <FooterLink to="/generator/station">Space Stations</FooterLink>
-              <FooterLink to="/generator/empire">Galactic Empires</FooterLink>
-              <FooterLink to="/generator/ai">AI Entities</FooterLink>
-              <FooterLink to="/generator/colony">Space Colonies</FooterLink>
+              <FooterLink to="/generator/alien">Alien Names</FooterLink>
+              <FooterLink to="/generator/bionicle">Bionicle Names</FooterLink>
+              <FooterLink to="/generator/chiss">Chiss Names</FooterLink>
+              <FooterLink to="/generator/clone">Clone Names</FooterLink>
+              <FooterLink to="/generator/cyberpunk">Cyberpunk Names</FooterLink>
+              <FooterLink to="/generator/cyborg">Cyborg Names</FooterLink>
             </ul>
           </div>
           
@@ -43,10 +41,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-display font-bold mb-4">Company</h3>
             <ul className="space-y-2">
-              <FooterLink to="/about">About Us</FooterLink>
-              <FooterLink to="/contact">Contact</FooterLink>
-              <FooterLink to="/privacy">Privacy Policy</FooterLink>
-              <FooterLink to="/terms">Terms of Service</FooterLink>
+              <FooterLink to="/all-generators">All Generators</FooterLink>
             </ul>
           </div>
         </div>

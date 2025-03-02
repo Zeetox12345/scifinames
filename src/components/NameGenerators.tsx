@@ -1,50 +1,50 @@
 
-import { Rocket, Satellite, Star, Atom, CircuitBoard, Binary } from 'lucide-react';
+import { Alien, Robot, User, Clone, Terminal, CircuitBoard } from 'lucide-react';
 import GeneratorCard from './GeneratorCard';
 
 const NameGenerators = () => {
   const generators = [
     {
-      title: "Starship Names",
-      description: "Generate epic names for interstellar vessels, from mighty battleships to swift explorers.",
-      icon: <Rocket className="w-6 h-6" />,
-      to: "/generator/starship",
+      title: "Alien Name Generator",
+      description: "Generate unique names for alien species from across the universe.",
+      icon: <Alien className="w-6 h-6" />,
+      to: "/generator/alien",
+      color: "green",
+    },
+    {
+      title: "Bionicle Name Generator",
+      description: "Create powerful names for mechanical beings with organic elements.",
+      icon: <Robot className="w-6 h-6" />,
+      to: "/generator/bionicle",
       color: "blue",
     },
     {
-      title: "Alien Species",
-      description: "Create unique names for alien civilizations from across the galaxies.",
-      icon: <Atom className="w-6 h-6" />,
-      to: "/generator/alien",
+      title: "Chiss Name Generator",
+      description: "Generate names for the blue-skinned, red-eyed humanoid species.",
+      icon: <User className="w-6 h-6" />,
+      to: "/generator/chiss",
       color: "purple",
     },
     {
-      title: "Space Stations",
-      description: "Name your orbital habitats, from military outposts to civilian hubs.",
-      icon: <Satellite className="w-6 h-6" />,
-      to: "/generator/station",
+      title: "Clone Name Generator",
+      description: "Create designations for clone troopers and other replicated entities.",
+      icon: <Clone className="w-6 h-6" />,
+      to: "/generator/clone",
       color: "cyan",
     },
     {
-      title: "Galactic Empires",
-      description: "Generate names for vast interstellar civilizations and their domains.",
-      icon: <Star className="w-6 h-6" />,
-      to: "/generator/empire",
-      color: "red",
-    },
-    {
-      title: "AI Entities",
-      description: "Create designations for artificial intelligences, from ship computers to androids.",
-      icon: <CircuitBoard className="w-6 h-6" />,
-      to: "/generator/ai",
+      title: "Cyberpunk Name Generator",
+      description: "Generate names for hackers, street mercs, and other denizens of the neon future.",
+      icon: <Terminal className="w-6 h-6" />,
+      to: "/generator/cyberpunk",
       color: "pink",
     },
     {
-      title: "Space Colonies",
-      description: "Name planetary settlements and frontier outposts across the stars.",
-      icon: <Binary className="w-6 h-6" />,
-      to: "/generator/colony",
-      color: "blue",
+      title: "Cyborg Name Generator",
+      description: "Create designations for human-machine hybrids and enhanced individuals.",
+      icon: <CircuitBoard className="w-6 h-6" />,
+      to: "/generator/cyborg",
+      color: "red",
     },
   ];
   

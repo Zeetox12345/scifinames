@@ -40,8 +40,6 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
           <Link 
             to="/all-generators" 
             className="px-4 py-2 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-medium hover:shadow-neon transition-all duration-300"
@@ -68,8 +66,6 @@ const Header = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-space-800/95 backdrop-blur-md border-b border-space-600 animate-fade-in-up">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <MobileNavLink to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</MobileNavLink>
-            <MobileNavLink to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</MobileNavLink>
-            <MobileNavLink to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</MobileNavLink>
             <Link 
               to="/all-generators"
               className="px-4 py-2 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-medium text-center hover:shadow-neon transition-all duration-300"
