@@ -31,7 +31,7 @@ const NameGenerator = ({ type, examples }: NameGeneratorProps) => {
         <h3 className="text-2xl font-display font-bold text-white mb-4 sm:mb-0">Generated Names</h3>
         <CustomButton 
           onClick={generateNames} 
-          variant="default" 
+          variant="primary" 
           className="bg-gradient-to-r from-neon-blue to-neon-purple min-w-[150px]"
           icon={<RefreshCw className="w-4 h-4" />}
         >

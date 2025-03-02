@@ -1,5 +1,5 @@
 
-import { Alien, Robot, User, Clone, Terminal, CircuitBoard } from 'lucide-react';
+import { Bot, User, Aperture, Cpu, Terminal, CircuitBoard } from 'lucide-react';
 import GeneratorCard from './GeneratorCard';
 
 const NameGenerators = () => {
@@ -7,14 +7,14 @@ const NameGenerators = () => {
     {
       title: "Alien Name Generator",
       description: "Generate unique names for alien species from across the universe.",
-      icon: <Alien className="w-6 h-6" />,
+      icon: <Aperture className="w-6 h-6" />,
       to: "/generator/alien",
       color: "green",
     },
     {
       title: "Bionicle Name Generator",
       description: "Create powerful names for mechanical beings with organic elements.",
-      icon: <Robot className="w-6 h-6" />,
+      icon: <Bot className="w-6 h-6" />,
       to: "/generator/bionicle",
       color: "blue",
     },
@@ -28,7 +28,7 @@ const NameGenerators = () => {
     {
       title: "Clone Name Generator",
       description: "Create designations for clone troopers and other replicated entities.",
-      icon: <Clone className="w-6 h-6" />,
+      icon: <Cpu className="w-6 h-6" />,
       to: "/generator/clone",
       color: "cyan",
     },
