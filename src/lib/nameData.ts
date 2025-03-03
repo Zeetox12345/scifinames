@@ -4,6 +4,11 @@ import chissData from '@/data/chiss.json';
 import cloneData from '@/data/clone.json';
 import cyborgData from '@/data/cyborg.json';
 import cyberpunkData from '@/data/cyberpunk.json';
+import droidData from '@/data/droid.json';
+import ewokData from '@/data/ewok.json';
+import hackerData from '@/data/hacker.json';
+import mandalorianData from '@/data/mandalorian.json';
+import mechaData from '@/data/mecha.json';
 
 // Define the base interface for name data
 export interface NameData {
@@ -18,7 +23,12 @@ const nameDataMap: Record<string, NameData> = {
   'Chiss': chissData,
   'Clone': cloneData,
   'Cyborg': cyborgData,
-  'Cyberpunk': cyberpunkData
+  'Cyberpunk': cyberpunkData,
+  'Droid': droidData,
+  'Ewok': ewokData,
+  'Hacker': hackerData,
+  'Mandalorian': mandalorianData,
+  'Mecha': mechaData
 };
 
 /**

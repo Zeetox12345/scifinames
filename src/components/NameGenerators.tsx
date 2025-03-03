@@ -1,4 +1,4 @@
-import { Bot, User, Aperture, Cpu, Terminal, CircuitBoard } from 'lucide-react';
+import { Bot, User, Aperture, Cpu, Terminal, CircuitBoard, Cog, Leaf, Shield, Rocket } from 'lucide-react';
 import GeneratorCard from './GeneratorCard';
 
 const NameGenerators = () => {
@@ -43,6 +43,41 @@ const NameGenerators = () => {
       description: "Create designations for human-machine hybrids and enhanced individuals.",
       icon: <CircuitBoard className="w-6 h-6" />,
       to: "/cyborg",
+      color: "red",
+    },
+    {
+      title: "Droid Name Generator",
+      description: "Generate authentic droid designations and model numbers for your Star Wars universe.",
+      icon: <Cog className="w-6 h-6" />,
+      to: "/droid",
+      color: "yellow",
+    },
+    {
+      title: "Ewok Name Generator",
+      description: "Create authentic-sounding names for the furry inhabitants of the forest moon of Endor.",
+      icon: <Leaf className="w-6 h-6" />,
+      to: "/ewok",
+      color: "brown",
+    },
+    {
+      title: "Hacker Name Generator",
+      description: "Generate unique handles and pseudonyms for digital rebels and netrunners.",
+      icon: <Terminal className="w-6 h-6" />,
+      to: "/hacker",
+      color: "green",
+    },
+    {
+      title: "Mandalorian Name Generator",
+      description: "Create authentic names for the warrior culture of Mandalore and its clans.",
+      icon: <Shield className="w-6 h-6" />,
+      to: "/mandalorian",
+      color: "blue",
+    },
+    {
+      title: "Mecha Name Generator",
+      description: "Generate powerful names for giant robots, mechs, and mechanical combat suits.",
+      icon: <Rocket className="w-6 h-6" />,
+      to: "/mecha",
       color: "red",
     },
   ];

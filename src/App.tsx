@@ -12,6 +12,11 @@ import ChissGenerator from "./pages/generators/ChissGenerator";
 import CloneGenerator from "./pages/generators/CloneGenerator";
 import CyberpunkGenerator from "./pages/generators/CyberpunkGenerator";
 import CyborgGenerator from "./pages/generators/CyborgGenerator";
+import DroidGenerator from "./pages/generators/DroidGenerator";
+import EwokGenerator from "./pages/generators/EwokGenerator";
+import HackerGenerator from "./pages/generators/HackerGenerator";
+import MandalorianGenerator from "./pages/generators/MandalorianGenerator";
+import MechaGenerator from "./pages/generators/MechaGenerator";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +35,11 @@ const App = () => (
           <Route path="/clone" element={<CloneGenerator />} />
           <Route path="/cyberpunk" element={<CyberpunkGenerator />} />
           <Route path="/cyborg" element={<CyborgGenerator />} />
+          <Route path="/droid" element={<DroidGenerator />} />
+          <Route path="/ewok" element={<EwokGenerator />} />
+          <Route path="/hacker" element={<HackerGenerator />} />
+          <Route path="/mandalorian" element={<MandalorianGenerator />} />
+          <Route path="/mecha" element={<MechaGenerator />} />
           <Route path="/all-generators" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
