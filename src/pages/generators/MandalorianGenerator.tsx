@@ -8,8 +8,8 @@ const MandalorianGenerator = () => {
   const exampleNames = getExampleNames('Mandalorian');
   
   // Set the document title and description for SEO
-  const description = "Generate authentic Mandalorian names for your Star Wars fan fiction, RPG characters, or creative projects. Our database contains 5,000+ Mandalorian names inspired by the warrior culture of Mandalore, perfect for creating bounty hunters, warriors, and clan members.";
-  useDocumentTitle('Mandalorian Name Generator | 5,000+ Names', description);
+  const description = "Generate authentic Mandalorian names for your Star Wars fan fiction, RPG characters, or creative projects. Our database contains 10,000+ Mandalorian names inspired by the warrior culture of Mandalore, perfect for creating bounty hunters, warriors, and clan members.";
+  useDocumentTitle('Mandalorian Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage

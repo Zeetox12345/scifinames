@@ -8,8 +8,8 @@ const HackerGenerator = () => {
   const exampleNames = getExampleNames('Hacker');
   
   // Set the document title and description for SEO
-  const description = "Generate authentic-sounding hacker handles and pseudonyms for your cyberpunk stories, games, or creative projects. Our database contains 1,500+ hacker names inspired by cyberpunk culture, perfect for creating digital rebels, netrunners, and tech specialists.";
-  useDocumentTitle('Hacker Name Generator | 1,500+ Names', description);
+  const description = "Generate authentic-sounding hacker handles and pseudonyms for your cyberpunk stories, games, or creative projects. Our database contains 10,000+ hacker names inspired by cyberpunk culture, perfect for creating digital rebels, netrunners, and tech specialists.";
+  useDocumentTitle('Hacker Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage

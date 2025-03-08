@@ -17,6 +17,13 @@ import EwokGenerator from "./pages/generators/EwokGenerator";
 import HackerGenerator from "./pages/generators/HackerGenerator";
 import MandalorianGenerator from "./pages/generators/MandalorianGenerator";
 import MechaGenerator from "./pages/generators/MechaGenerator";
+import MiralukaGenerator from "./pages/generators/MiralukaGenerator";
+import MirialanGenerator from "./pages/generators/MirialanGenerator";
+import MonCalamariGenerator from "./pages/generators/MonCalamariGenerator";
+import PacificRimGenerator from "./pages/generators/PacificRimGenerator";
+import PlanetGenerator from "./pages/generators/PlanetGenerator";
+import RobotGenerator from "./pages/generators/RobotGenerator";
+import RodianGenerator from "./pages/generators/RodianGenerator";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +47,13 @@ const App = () => (
           <Route path="/hacker" element={<HackerGenerator />} />
           <Route path="/mandalorian" element={<MandalorianGenerator />} />
           <Route path="/mecha" element={<MechaGenerator />} />
+          <Route path="/miraluka" element={<MiralukaGenerator />} />
+          <Route path="/mirialan" element={<MirialanGenerator />} />
+          <Route path="/mon-calamari" element={<MonCalamariGenerator />} />
+          <Route path="/pacific-rim" element={<PacificRimGenerator />} />
+          <Route path="/planet" element={<PlanetGenerator />} />
+          <Route path="/robot" element={<RobotGenerator />} />
+          <Route path="/rodian" element={<RodianGenerator />} />
           <Route path="/all-generators" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

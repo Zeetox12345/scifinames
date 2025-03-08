@@ -8,8 +8,8 @@ const EwokGenerator = () => {
   const exampleNames = getExampleNames('Ewok');
   
   // Set the document title and description for SEO
-  const description = "Create authentic-sounding Ewok names for your Star Wars fan fiction, RPG characters, or creative projects. Our database contains 5,000+ Ewok names inspired by the furry inhabitants of the forest moon of Endor, perfect for expanding the Star Wars universe.";
-  useDocumentTitle('Ewok Name Generator | 5,000+ Names', description);
+  const description = "Create authentic-sounding Ewok names for your Star Wars fan fiction, RPG characters, or creative projects. Our database contains 10,000+ Ewok names inspired by the furry inhabitants of the forest moon of Endor, perfect for expanding the Star Wars universe.";
+  useDocumentTitle('Ewok Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage

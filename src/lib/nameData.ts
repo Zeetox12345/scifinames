@@ -9,6 +9,13 @@ import ewokData from '@/data/ewok.json';
 import hackerData from '@/data/hacker.json';
 import mandalorianData from '@/data/mandalorian.json';
 import mechaData from '@/data/mecha.json';
+import miralukaData from '@/data/miraluka.json';
+import mirialanData from '@/data/mirialan.json';
+import monCalamariData from '@/data/mon_calamari.json';
+import pacificRimData from '@/data/pacific_rim.json';
+import planetData from '@/data/planet.json';
+import robotData from '@/data/robot.json';
+import rodianData from '@/data/rodian.json';
 
 // Define the base interface for name data
 export interface NameData {
@@ -28,7 +35,14 @@ const nameDataMap: Record<string, NameData> = {
   'Ewok': ewokData,
   'Hacker': hackerData,
   'Mandalorian': mandalorianData,
-  'Mecha': mechaData
+  'Mecha': mechaData,
+  'Miraluka': miralukaData,
+  'Mirialan': mirialanData,
+  'Mon Calamari': monCalamariData,
+  'Pacific Rim': pacificRimData,
+  'Planet': planetData,
+  'Robot': robotData,
+  'Rodian': rodianData
 };
 
 /**

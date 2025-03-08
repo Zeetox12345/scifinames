@@ -1,4 +1,4 @@
-import { Bot, User, Aperture, Cpu, Terminal, CircuitBoard, Cog, Leaf, Shield, Rocket } from 'lucide-react';
+import { Bot, User, Aperture, Cpu, Terminal, CircuitBoard, Cog, Leaf, Shield, Rocket, Eye, Palette, Fish, Swords, Globe, Zap, Skull } from 'lucide-react';
 import GeneratorCard from './GeneratorCard';
 
 const NameGenerators = () => {
@@ -79,6 +79,55 @@ const NameGenerators = () => {
       icon: <Rocket className="w-6 h-6" />,
       to: "/mecha",
       color: "red",
+    },
+    {
+      title: "Miraluka Name Generator",
+      description: "Create names for the eyeless Force-sensitive near-humans from Star Wars.",
+      icon: <Eye className="w-6 h-6" />,
+      to: "/miraluka",
+      color: "purple",
+    },
+    {
+      title: "Mirialan Name Generator",
+      description: "Generate names for the green-skinned, tattooed near-humans with Force affinity.",
+      icon: <Palette className="w-6 h-6" />,
+      to: "/mirialan",
+      color: "green",
+    },
+    {
+      title: "Mon Calamari Name Generator",
+      description: "Create names for the amphibious species known for their shipbuilding expertise.",
+      icon: <Fish className="w-6 h-6" />,
+      to: "/mon-calamari",
+      color: "blue",
+    },
+    {
+      title: "Pacific Rim Name Generator",
+      description: "Generate epic names for Jaegers and Kaiju from the Pacific Rim universe.",
+      icon: <Swords className="w-6 h-6" />,
+      to: "/pacific-rim",
+      color: "cyan",
+    },
+    {
+      title: "Planet Name Generator",
+      description: "Create unique and evocative names for planets, moons, and celestial bodies.",
+      icon: <Globe className="w-6 h-6" />,
+      to: "/planet",
+      color: "blue",
+    },
+    {
+      title: "Robot Name Generator",
+      description: "Generate distinctive designations for robots, AI entities, and synthetic beings.",
+      icon: <Zap className="w-6 h-6" />,
+      to: "/robot",
+      color: "yellow",
+    },
+    {
+      title: "Rodian Name Generator",
+      description: "Create authentic names for the green-skinned hunters known for their distinctive snouts.",
+      icon: <Skull className="w-6 h-6" />,
+      to: "/rodian",
+      color: "green",
     },
   ];
   

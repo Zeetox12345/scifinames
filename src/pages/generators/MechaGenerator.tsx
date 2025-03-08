@@ -8,8 +8,8 @@ const MechaGenerator = () => {
   const exampleNames = getExampleNames('Mecha');
   
   // Set the document title and description for SEO
-  const description = "Generate powerful and evocative names for giant robots, mechs, and mechanical combat suits. Our database contains 1,500+ mecha names inspired by anime, science fiction, and military terminology, perfect for your stories, games, or creative projects.";
-  useDocumentTitle('Mecha Name Generator | 1,500+ Names', description);
+  const description = "Generate powerful and evocative names for giant robots, mechs, and mechanical combat suits. Our database contains 10,000+ mecha names inspired by anime, science fiction, and military terminology, perfect for your stories, games, or creative projects.";
+  useDocumentTitle('Mecha Name Generator | 10,000+ Names', description);
 
   return (
     <GeneratorPage
