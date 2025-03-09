@@ -24,6 +24,13 @@ import PacificRimGenerator from "./pages/generators/PacificRimGenerator";
 import PlanetGenerator from "./pages/generators/PlanetGenerator";
 import RobotGenerator from "./pages/generators/RobotGenerator";
 import RodianGenerator from "./pages/generators/RodianGenerator";
+import SithGenerator from "./pages/generators/SithGenerator";
+import SpaceshipGenerator from "./pages/generators/SpaceshipGenerator";
+import SteampunkGenerator from "./pages/generators/SteampunkGenerator";
+import TogrutaGenerator from "./pages/generators/TogrutaGenerator";
+import TransformersGenerator from "./pages/generators/TransformersGenerator";
+import WookieeGenerator from "./pages/generators/WookieeGenerator";
+import ZabrakGenerator from "./pages/generators/ZabrakGenerator";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +61,13 @@ const App = () => (
           <Route path="/planet" element={<PlanetGenerator />} />
           <Route path="/robot" element={<RobotGenerator />} />
           <Route path="/rodian" element={<RodianGenerator />} />
+          <Route path="/sith" element={<SithGenerator />} />
+          <Route path="/spaceship" element={<SpaceshipGenerator />} />
+          <Route path="/steampunk" element={<SteampunkGenerator />} />
+          <Route path="/togruta" element={<TogrutaGenerator />} />
+          <Route path="/transformers" element={<TransformersGenerator />} />
+          <Route path="/wookiee" element={<WookieeGenerator />} />
+          <Route path="/zabrak" element={<ZabrakGenerator />} />
           <Route path="/all-generators" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -16,6 +16,13 @@ import pacificRimData from '@/data/pacific_rim.json';
 import planetData from '@/data/planet.json';
 import robotData from '@/data/robot.json';
 import rodianData from '@/data/rodian.json';
+import sithData from '@/data/sith.json';
+import spaceshipData from '@/data/spaceship.json';
+import steampunkData from '@/data/steampunk.json';
+import togrutaData from '@/data/togruta.json';
+import transformersData from '@/data/transformers.json';
+import wookieeData from '@/data/wookiee.json';
+import zabrakData from '@/data/zabrak.json';
 
 // Define the base interface for name data
 export interface NameData {
@@ -42,7 +49,14 @@ const nameDataMap: Record<string, NameData> = {
   'Pacific Rim': pacificRimData,
   'Planet': planetData,
   'Robot': robotData,
-  'Rodian': rodianData
+  'Rodian': rodianData,
+  'Sith': sithData,
+  'Spaceship': spaceshipData,
+  'Steampunk': steampunkData,
+  'Togruta': togrutaData,
+  'Transformers': transformersData,
+  'Wookiee': wookieeData,
+  'Zabrak': zabrakData
 };
 
 /**

@@ -1,4 +1,4 @@
-import { Bot, User, Aperture, Cpu, Terminal, CircuitBoard, Cog, Leaf, Shield, Rocket, Eye, Palette, Fish, Swords, Globe, Zap, Skull } from 'lucide-react';
+import { Bot, User, Aperture, Cpu, Terminal, CircuitBoard, Cog, Leaf, Shield, Rocket, Eye, Palette, Fish, Swords, Globe, Zap, Skull, Sword, Ship, Clock, Flame, Truck, Footprints, Landmark } from 'lucide-react';
 import GeneratorCard from './GeneratorCard';
 
 const NameGenerators = () => {
@@ -128,6 +128,55 @@ const NameGenerators = () => {
       icon: <Skull className="w-6 h-6" />,
       to: "/rodian",
       color: "green",
+    },
+    {
+      title: "Sith Name Generator",
+      description: "Generate powerful names for dark side Force users with a penchant for red lightsabers.",
+      icon: <Sword className="w-6 h-6" />,
+      to: "/sith",
+      color: "red",
+    },
+    {
+      title: "Spaceship Name Generator",
+      description: "Create memorable names for vessels of all types, from nimble fighters to massive capital ships.",
+      icon: <Ship className="w-6 h-6" />,
+      to: "/spaceship",
+      color: "blue",
+    },
+    {
+      title: "Steampunk Name Generator",
+      description: "Generate Victorian-inspired names for characters in brass-and-steam alternate realities.",
+      icon: <Clock className="w-6 h-6" />,
+      to: "/steampunk",
+      color: "brown",
+    },
+    {
+      title: "Togruta Name Generator",
+      description: "Create authentic names for the colorful, montrals-bearing humanoids from Star Wars.",
+      icon: <Flame className="w-6 h-6" />,
+      to: "/togruta",
+      color: "orange",
+    },
+    {
+      title: "Transformers Name Generator",
+      description: "Generate distinctive names for Autobots, Decepticons, and other robots in disguise.",
+      icon: <Truck className="w-6 h-6" />,
+      to: "/transformers",
+      color: "yellow",
+    },
+    {
+      title: "Wookiee Name Generator",
+      description: "Create authentic names for the tall, furry warriors from Kashyyyk known for their strength.",
+      icon: <Footprints className="w-6 h-6" />,
+      to: "/wookiee",
+      color: "brown",
+    },
+    {
+      title: "Zabrak Name Generator",
+      description: "Generate names for the horned humanoids known for their resilience and facial tattoos.",
+      icon: <Landmark className="w-6 h-6" />,
+      to: "/zabrak",
+      color: "red",
     },
   ];
   
